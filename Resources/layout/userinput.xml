@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout1"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNum"
+        android:maxLength="1"
+        android:width="200px"
+        android:layout_centerInParent="true" 
+        
+         />
+    <Button
+        android:text="取消"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCancle"
+        android:layout_alignBottom="@id/editTextNum" />
+    <Button
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOk"
+        android:layout_alignBottom="@id/editTextNum"
+        android:foregroundGravity="right"/>
+</LinearLayout >

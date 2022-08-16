@@ -1,9 +1,38 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+  <group android:id="@+id/gametype" >
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/menu_14"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="和为14"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_15"
+        android:orderInCategory="110"
+        android:title="和为15"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_16"
+        android:orderInCategory="120"
+        android:title="和为16"
+        app:showAsAction="never" />
+  </group>
+  <group android:id="@+id/gameaction" >
+  <item
+      android:id="@+id/menu_new"
+      android:orderInCategory="130"
+      android:title="新游戏"
+      app:showAsAction="never" />
+  <item
+      android:id="@+id/menu_about"
+      android:orderInCategory="140"
+      android:title="关于作者"
+      app:showAsAction="never" />
+  </group>
+  <item
+      android:id="@+id/menu_setaifirst"
+      android:orderInCategory="150"
+      android:title="AI先走"
+      app:showAsAction="never" />
 </menu>

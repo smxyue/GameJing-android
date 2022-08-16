@@ -6,11 +6,58 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Hello World!" />
+        android:id="@+id/linearLayout1"
+        android:gravity="top|center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/msgTitle"
+            android:textColor="#ff1b5e20"
+            android:textSize="12pt" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff1b5e20"
+            android:id="@+id/textViewMsg"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt" 
+             />
+        <ImageView
+            android:src="@drawable/grid3x3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewGame"
+            android:scaleType="fitCenter"
+            android:contentDescription=""
+            android:layout_gravity="center" 
+             />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTip"
+            android:textColor="#ffbf360c" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:gravity="bottom|center">
+        
+    </LinearLayout>
 
 </RelativeLayout>
